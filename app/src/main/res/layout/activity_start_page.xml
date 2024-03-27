@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="false"
+    android:background="@drawable/bg"
+    tools:context=".StartPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/museobold"
+            android:text="@string/feel_the_music"
+            android:textColor="@color/secondary"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rosariomed"
+            android:text="@string/welcome"
+            android:textColor="@color/secondary"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            app:strokeWidth="5dp"
+            app:strokeColor="@color/secondary"
+            app:cornerRadius="30dp"
+            android:fontFamily="@font/rosariomed"
+            android:text="@string/sign_in"
+            android:textColor="@color/secondary"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button2"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            app:backgroundTint="@color/secondary"
+            app:cornerRadius="30dp"
+            android:fontFamily="@font/rosariomed"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

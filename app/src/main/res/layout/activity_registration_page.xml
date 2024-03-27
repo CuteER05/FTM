@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="false"
+    android:background="@drawable/bg"
+    tools:context=".LogIn_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CD442614"
+            android:fontFamily="@font/museobold"
+            android:gravity="start"
+            android:text="@string/create_your"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CD442614"
+            android:fontFamily="@font/museobold"
+            android:text="@string/account"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="start" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="28dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginBottom="-30dp"
+        tools:ignore="VisualLintBounds">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="@drawable/bg2"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/full_name"
+                android:textColor="@color/secondary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="63dp"
+                android:autofillHints=""
+                android:hint="@string/full_name2"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/phone_gmail"
+                android:textColor="@color/secondary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="148dp"
+                android:autofillHints=""
+                android:hint="@string/phone_gmail2"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/password"
+                android:textColor="@color/secondary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="233dp"
+                android:autofillHints=""
+                android:hint="@string/password2"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="285dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/confirm_password"
+                android:textColor="@color/secondary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password3"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="318dp"
+                android:autofillHints=""
+                android:hint="@string/confirm_password2"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button4"
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="375dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/secondary"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="440dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/already_have_an_account"
+                android:textColor="@color/secondary"
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/txt_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="458dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/sign_in"
+                android:textColor="@color/secondary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

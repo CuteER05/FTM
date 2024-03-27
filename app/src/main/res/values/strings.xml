@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Feel the Music</string>
+    <string name="text1">Feel the Music</string>
+    <string name="text2">WELCOME!</string>
+    <string name="text4">Sign Up</string>
+    <string name="text3">Sign In</string>
+    <string name="text5">Hello!</string>
+    <string name="hello">Hello!</string>
+    <string name="feel_the_music">Feel the Music</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email:</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password:</string>
+    <string name="password2">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="account">" "Account" "</string>
+    <string name="create_your">" "Create Your" "</string>
+    <string name="full_name">Full Name:</string>
+    <string name="full_name2">Full Name</string>
+    <string name="phone_gmail">Phone/Gmail:</string>
+    <string name="phone_gmail2">Phone/Gmail</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="confirm_password2">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="profile_pic">Profile Pic</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="username">Username</string>
+    <string name="practice_mode">Practice Mode</string>
+    <string name="lesson_mode">Lesson Mode</string>
+    <string name="music_sheets">Music Sheets</string>
+</resources>

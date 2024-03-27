@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="false"
+    android:background="@drawable/bg"
+    tools:context=".LogIn_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/museobold"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/museobold"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="start" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="28dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginBottom="-30dp"
+        tools:ignore="VisualLintBounds">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:background="@drawable/bg3"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/email"
+                android:textColor="@color/secondary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username1"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="70dp"
+                android:autofillHints=""
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="120dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/password"
+                android:textColor="@color/secondary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="160dp"
+                android:autofillHints=""
+                android:hint="@string/password2"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Button3"
+                android:layout_width="320dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="270dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/secondary"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="360dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/don_t_have_an_account"
+                android:textColor="@color/secondary"
+                android:textSize="20sp"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/txt_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="380dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/rosariomed"
+                android:text="@string/sign_up"
+                android:textColor="@color/secondary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    
+</RelativeLayout>
